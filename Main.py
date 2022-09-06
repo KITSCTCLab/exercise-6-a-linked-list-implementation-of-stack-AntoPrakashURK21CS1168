@@ -12,12 +12,11 @@ class Stack:
     # Write your code here
     new_node = Node(data)
     new_node.next = self.head
-    self.head=new_node
-    
+    self.head = new_node
 
   def pop(self) -> None:
     # Write your code here
-    if(self.head != None):
+    if(self.head != None): 
       temp = self.head
       self.head = temp.next
       temp.next = None
@@ -26,17 +25,19 @@ class Stack:
     """
     It prints all the elements of stack.
     """
-    # Write your code here
+    # Write your code here  
     if(self.head != None):
       temp = self.head
       while(temp.next != None):
         print(temp.data, end = "=>")
         temp = temp.next
       else:
-        print(temp.data,"None",sep"=>")
-     else:
-       print("None")
-          
+        print(temp.data,"None", sep="=>")
+    else:
+      print("None")
+      
+    
+
 # Do not change the following code
 stack = Stack()
 operations = []
